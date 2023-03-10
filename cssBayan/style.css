@@ -1,4 +1,12 @@
 body {
     box-sizing: border-box;
     background-color: rgb(46, 44, 44);
+    font-size: 3rem;
+    line-height: 3rem;
 }
+.wrapper {
+    max-width: 1920px;
+}
+
+/* Style item start */
+
