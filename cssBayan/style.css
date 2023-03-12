@@ -26,7 +26,6 @@
          url('fonts/roboto-v30-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
-
 * {
     box-sizing: border-box;
     color: #FFFFFF;
@@ -39,7 +38,7 @@ body {
 .wrapper {
     margin: 0 auto;
     background-color: rgb(37, 37, 37);
-    height: 150vh;
+    height: 210vh;
 }
 img {
     margin: 0 auto;
