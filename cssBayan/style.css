@@ -79,6 +79,7 @@ li {
         border: 0.2rem solid white;
         border-radius: 1rem;
         cursor: pointer;
+        transition: 0.2s linear;
     }
     .item__span {
         visibility: hidden;
@@ -113,7 +114,7 @@ li {
         transform: rotate(45deg);
     }
     .item__label-title:hover {
-        background: rgb(53, 51, 51);
+        background: #777777;
     }
     .item__input:checked ~ .item__img {
         opacity: 1;
@@ -143,7 +144,7 @@ li {
     .items {
         max-width: 42rem;
     }
-    .item__label {
+    .item__label-title {
         font-size: 2rem;
         line-height: 2.1rem;
     }
@@ -169,7 +170,7 @@ li {
         line-height: 4.2rem;
         padding: 3.5rem;
     }
-    .item__label {
+    .item__label-title {
         font-size: 1.7rem;
         line-height: 1.8rem;
     }
@@ -193,7 +194,7 @@ li {
     .items {
         max-width: 19rem;
     }
-    .item__label {
+    .item__label-title {
         font-size: 1rem;
         line-height: 1.1rem;
         padding: 0.7rem;
