@@ -1,0 +1,206 @@
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('fonts/roboto-v30-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('fonts/roboto-v30-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('fonts/roboto-v30-latin-500.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/roboto-v30-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('fonts/roboto-v30-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+* {
+    box-sizing: border-box;
+    color: #FFFFFF;
+    margin: 0rem;
+}
+body {
+    background-color: rgb(37, 37, 37);
+    font-family: 'roboto';
+    font-style: normal;
+}
+.wrapper {
+    margin: 0 auto;
+    height: 210vh;
+}
+img {
+    margin: 0 auto;
+}
+li {
+    list-style-type: none;
+}
+
+/* Style item start */
+
+@media (max-width: 2000px) {
+
+    .title {
+        font-size: 5rem;
+        line-height: 5.2rem;
+        margin: 0rem;
+        padding: 6rem;
+        text-align: center;;
+    }
+    .items {
+        max-width: 50rem;
+        padding-left: 0rem;
+        margin: 0 auto;
+    }
+    .item {
+        margin-bottom: 1rem;
+    }
+    .item__input {
+        visibility: hidden;
+    }
+    .item__label-title {
+        display: flex;
+        justify-content: space-between;
+        font-size: 2.2rem;
+        line-height: 2.3rem;
+        padding: 1rem;
+        border: 0.2rem solid white;
+        border-radius: 1rem;
+        cursor: pointer;
+        transition: 0.2s linear;
+    }
+    .item__span {
+        visibility: hidden;
+        transition: 0.2s ease;
+    }
+    .item__img {
+        display: flex;
+        width: auto;
+        max-height: 0;
+        margin: 0 auto;
+        visibility: hidden;
+        cursor: pointer;
+        opacity: 0;
+        transition: all 0.3s linear;
+    }
+    img {
+        border-radius: 2.5rem;
+        width: 30rem;
+        height: 30rem;
+    }
+
+
+    /* Actions start */
+
+    .items:hover .item__span {
+        visibility: visible;
+    }
+    .item:hover .item__span {
+        transform: rotate(45deg);
+    }
+    .item:checked .item__span {
+        transform: rotate(45deg);
+    }
+    .item__label-title:hover {
+        background: #777777;
+    }
+    .item__input:checked ~ .item__img {
+        opacity: 1;
+        max-height: 100vh;
+        visibility: visible;
+        padding-top: 1rem;
+    }
+    .item:hover .item__img {
+        opacity: 1;
+        max-height: 100vh;
+        visibility: visible;
+        padding: 0 auto;
+        padding-top: 1rem;
+    }
+
+    /* Actions end */
+
+}
+
+@media (max-width: 820px) {
+
+    img {
+        border-radius: 2rem;
+        width: 25rem;
+        height: 25rem;
+    }
+    .items {
+        max-width: 42rem;
+    }
+    .item__label-title {
+        font-size: 2rem;
+        line-height: 2.1rem;
+    }
+
+}
+
+@media (max-width: 570px) {
+
+    img {
+        border-radius: 1rem;
+        width: 19rem;
+        height: 19rem;
+    }
+    .wrapper {
+        height: 160vh;
+    }
+
+    .items {
+        max-width: 31rem;
+    }
+    .title {
+        font-size: 4rem;
+        line-height: 4.2rem;
+        padding: 3.5rem;
+    }
+    .item__label-title {
+        font-size: 1.7rem;
+        line-height: 1.8rem;
+    }
+}
+
+@media (max-width: 320px) {
+
+    img {
+        border-radius: 1rem;
+        width: 13rem;
+        height: 13rem;
+    }
+    .wrapper {
+        height: 170vh;
+    }
+    .title {
+        font-size: 2.5rem;
+        line-height: 2.6rem;
+        padding: 3.5rem;
+    }
+    .items {
+        max-width: 19rem;
+    }
+    .item__label-title {
+        font-size: 1rem;
+        line-height: 1.1rem;
+        padding: 0.7rem;
+        border: 0.1rem solid white;
+        border-radius: 0.7rem;
+        cursor: pointer;
+    }
+}
+
+/* Style item end */
